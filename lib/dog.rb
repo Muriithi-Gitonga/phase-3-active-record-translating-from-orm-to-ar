@@ -16,8 +16,7 @@ CREATE TABLE IF NOT EXISTS dogs (
     breed TEXT
 )
 SQL
-
-
+ActiveRecord::Base.connection.execute(sql)
 
 class Dog < ActiveRecord::Base
 end
